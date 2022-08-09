@@ -6,17 +6,16 @@ POST http://localhost:3000/api/v1/tasks
 content-type: application/json
 
 {
-    "name": "eric",
-    "completed": "true"
+    "name": ""
 }
 ###
 
-GET http://localhost:3000/api/v1/tasks/:id
+GET http://localhost:3000/api/v1/tasks/62f17f2f43bd5ed9dd49da54
 
 ###
 
-PATCH http://localhost:3000/api/v1/tasks/:id
- 
+PATCH http://localhost:3000/api/v1/tasks/62f17f2f43bd5ed9dd49da54
+
  
 ###
 

@@ -1,2 +1,12 @@
-const connectionString =
-  "mongodb+srv://ecs92:soccerpro47@cluster0.frdhqfz.mongodb.net/?retryWrites=true&w=majority";
+const mongoose = require("mongoose");
+
+const connectDB = (url) => {
+  mongoose.connect(url, {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true,
+  });
+};
+
+module.exports = connectDB;
